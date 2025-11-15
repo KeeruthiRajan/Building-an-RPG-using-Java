@@ -21,11 +21,11 @@ RPG loosely inspired by 1986 $${\color{lime}Zelda}$$ and $${\color{purple} Under
 - Run main.java
 - To test and debug other features, run class files seperately.
 
-## $${\color{red} Problems}$$ $${\color{red} Encountered}$$
+## $${\color{red} Problems}$$ $${\color{red} encountered}$$
 - Sticky Collision Edge
 - Optimization issues
 
-## $${\color{yellow} Concepts_to_add}$$
+## $${\color{yellow} Concepts}$$ $${\color{yellow} to}$$ $${\color{yellow} add}$$
 - Creating Object tiles
 - Object Interaction
 - Health System
