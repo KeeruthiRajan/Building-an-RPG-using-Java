@@ -31,5 +31,5 @@ RPG loosely inspired by 1986 $${\color{lime}Zelda}$$ and $${\color{purple} Under
 - Health System
 - Events
 - Lighting
-- $${\color{orange} NPCs}
-- $${\color{orange} Boss_Battles}
+- $${\color{orange} NPCs}$$
+- $${\color{orange} Boss}$$ $${\color{yellow} battles}$$
