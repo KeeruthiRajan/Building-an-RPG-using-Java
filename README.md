@@ -20,3 +20,16 @@ RPG loosely inspired by 1986 $${\color{lime}Zelda}$$ and $${\color{purple} Under
 - Open in IDE and locate main.java
 - Run main.java
 - To test and debug other features, run class files seperately.
+
+## $${\color{red} Problems Encountered}$$
+- Sticky Collision Edge
+- Optimization issues
+
+## $${\color{yellow} Concepts to add}$$
+- Creating Object tiles
+- Object Interaction
+- Health System
+- Events
+- Lighting
+- $${\color{orange} NPCs}
+- $${\color{orange} Boss Battles}
