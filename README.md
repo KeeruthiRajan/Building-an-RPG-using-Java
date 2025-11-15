@@ -2,5 +2,5 @@
 This Repository logs my journey in building an RPG using Java.
 
 ## Reference Resources / Inspirations
-Concepts and Tutorials by RyiSnow on YouTube.
+Concepts and Tutorials by RyiSnow on YouTube.  
 RPG loosely inspired by 90's $${\color{yellow} Zelda.}$$
