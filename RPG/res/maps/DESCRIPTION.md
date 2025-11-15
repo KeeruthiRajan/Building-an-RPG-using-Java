@@ -8,7 +8,7 @@
 - Original size: **16 x 16**
 - In game: Scaled thrice, ie., **48 x 48**
 
-  ## Future Plans
-  - Increase grid size
-  - Add more tiles
-  - Connect multiple text maps somehow
+## Future Plans
+- Increase grid size
+- Add more tiles
+- Connect multiple text maps somehow
