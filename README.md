@@ -3,7 +3,7 @@ This Repository logs my journey in building an RPG using Java.
 
 ## Reference Resources / Inspirations
 Concepts and Tutorials by [RyiSnow](https://www.youtube.com/watch?v=om59cwR7psI&list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&pp=0gcJCbAEOCosWNin) on YouTube.  
-RPG loosely inspired by $${\color{red} 1986 Zelda}$$ and $${\color{purple} Undertale.}$$  
+RPG loosely inspired by 1986 $${\color{lime}Zelda}$$ and $${\color{purple} Undertale.}$$  
 
 ## Current Status:
 - Gamepanel has been created
