@@ -2,6 +2,10 @@
 - A $${\color{pink} pink}$$ slime (easy to design, for a first game)
 - Wears a hard hat and roams through the environment
 
+## Dimensions of Sprite
+- Original size: *16 x 16*
+- In game: Scaled thrice, ie., *48 x 48*
+
 ## Future Plans
 - Add a different transformation (sprite) based on collectible items, inspired by $${\color{pink} Kirby}$$.
 - Create different movement sprites based on forms
