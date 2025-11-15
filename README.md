@@ -21,7 +21,7 @@ RPG loosely inspired by 1986 $${\color{lime}Zelda}$$ and $${\color{purple} Under
 - Run main.java
 - To test and debug other features, run class files seperately.
 
-## $${\color{red} Problems_Encountered}$$
+## $${\color{red} Problems}$$ $${\color{red} Encountered}$$
 - Sticky Collision Edge
 - Optimization issues
 
