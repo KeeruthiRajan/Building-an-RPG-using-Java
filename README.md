@@ -22,7 +22,7 @@ RPG loosely inspired by 1986 $${\color{lime}Zelda}$$ and $${\color{purple} Under
 - To test and debug other features, run class files seperately.
 
 ## $${\color{red} Problems}$$ $${\color{red} encountered}$$
-- Sticky Collision Edge
+- ~~Sticky Collision Edge~~ Patched on 18-12-2025
 - Optimization issues
 
 ## $${\color{yellow} Concepts}$$ $${\color{yellow} to}$$ $${\color{yellow} add}$$
