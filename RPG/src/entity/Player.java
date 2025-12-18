@@ -19,14 +19,14 @@ public class Player extends Entity {
     TileManager tileM;
     CollisionHandler colH;
     public int screenX, screenY;
-    public boolean collisionOn;
+    public boolean collisionOn[][] = new boolean[3][3];
 
     public Player(GamePanel gp, KeyHandler keyH, TileManager tileM) {
         this.gp = gp;
         this.keyH = keyH;
         this.tileM = tileM;
         colH = new CollisionHandler(gp, this ,tileM);
-        setDefaultValues(15, 15, 4);
+        setDefaultValues(16, 5, 4);
         getPlayerImage();
     }
 
@@ -54,28 +54,47 @@ public class Player extends Entity {
             e.printStackTrace();
         }
     }
+    
+    public void collisionResetter(boolean b[][]) {
+    	for(int i = 0; i < b.length; i++) {
+    		for(int j = 0; j < b[0].length; j++)
+    			b[i][j] = false;
+    	}
+    }
 
     public void update() {
         boolean moving = keyH.isLeft || keyH.isRight || keyH.isUp || keyH.isDown;
         if (moving) {
             if (keyH.isLeft) {
                 if (!direction.equals("left")) direction = "left";
-                if (collisionOn == false) worldX -= speed;
+                if (collisionOn[1][0] == false) {
+                	if(collisionOn[0][0] == false || collisionOn[2][0] == false)
+                		worldX -= speed;
+                }
             }
             if (keyH.isRight) {
                 if (!direction.equals("right")) direction = "right";
-                if (collisionOn == false) worldX += speed;
+                if (collisionOn[1][2] == false) {
+                	if(collisionOn[0][2] == false || collisionOn[2][2] == false)
+                		worldX += speed;
+                }
             }
             if (keyH.isUp) {
                 if (!direction.equals("up")) direction = "up";
-                if (collisionOn == false) worldY -= speed;
+                if (collisionOn[0][1] == false) {
+                	if(collisionOn[0][0] == false || collisionOn[0][2] == false)
+                		worldY -= speed;
+                }
             }
             if (keyH.isDown) {
                 if (!direction.equals("down")) direction = "down";
-                if (collisionOn == false) worldY += speed;
+                if (collisionOn[2][1] == false) {
+                	if(collisionOn[2][0] == false || collisionOn[2][2] == false)
+                		worldY += speed;
+                }
             }
             
-            collisionOn = false;
+            collisionResetter(collisionOn);
             colH.playerCollision(direction, hitBox);
             
             spriteCounter++;
@@ -89,7 +108,6 @@ public class Player extends Entity {
         	spriteCounter = 0;
         }
     }
-    
 
     public void draw(Graphics2D g2) {
         BufferedImage image = null;
