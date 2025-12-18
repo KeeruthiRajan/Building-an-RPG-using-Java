@@ -16,7 +16,7 @@ public class CollisionHandler {
 		this.tm = tm;
 	}
 	
-    public void playerCollision(String dir, Rectangle hb) { // current status: sticky edge problem eliminated for 4 cardinal directions, haven't resolved for diagonal movement.
+    public void playerCollision(String dir, Rectangle hb) { // FIXED STICKY EDGE BY CHANCE 🙏🏻
     	int worldLeftX = hb.x + p.worldX;
     	int worldRightX = hb.x + hb.width + p.worldX;
     	int worldTop = hb.y + p.worldY;
@@ -32,55 +32,31 @@ public class CollisionHandler {
     	int niym = worldMidY / gp.tileSize;
     	
     	
-    	switch(dir) {
-    	case "up":
-    		niwt -= p.speed / gp.tileSize;
-    		if(tm.tile[tm.mapTileNum[nicl][niwt]].collision == true) 
-    			p.collisionOn[0] = true;
-    			
-    		if(tm.tile[tm.mapTileNum[nixm][niwt]].collision == true)
-    			p.collisionOn[1] = true;
-    		
-    		if(tm.tile[tm.mapTileNum[nicr][niwt]].collision == true)
-    			p.collisionOn[2] = true;
-    		
-    		break;
-    		
-    	case "down":
-    		niwb += p.speed/gp.tileSize;
-    		if(tm.tile[tm.mapTileNum[nicl][niwb]].collision == true) 
-    			p.collisionOn[5] = true;
-    			
-    		if(tm.tile[tm.mapTileNum[nixm][niwb]].collision == true)
-    			p.collisionOn[6] = true;
-    		
-    		if(tm.tile[tm.mapTileNum[nicr][niwb]].collision == true)
-    			p.collisionOn[7] = true;
-    		break;
-    		
-    	case "left":
-    		nicl -= p.speed / gp.tileSize;
-    		if(tm.tile[tm.mapTileNum[nicl][niwt]].collision == true) 
-    			p.collisionOn[0] = true;
-    			
-    		if(tm.tile[tm.mapTileNum[nicl][niym]].collision == true)
-    			p.collisionOn[3] = true;
-    		
-    		if(tm.tile[tm.mapTileNum[nicl][niwb]].collision == true)
-    			p.collisionOn[5] = true;
-    		break;
-    		
-    	case "right":
-    		nicr += p.speed / gp.tileSize;
-    		if(tm.tile[tm.mapTileNum[nicr][niwt]].collision == true) 
-    			p.collisionOn[2] = true;
-    			
-    		if(tm.tile[tm.mapTileNum[nicr][niym]].collision == true)
-    			p.collisionOn[4] = true;
-    		
-    		if(tm.tile[tm.mapTileNum[nicr][niwb]].collision == true)
-    			p.collisionOn[7] = true;
-    		break;
-    	}
+    	
+    	if(tm.tile[tm.mapTileNum[nicl][niwt]].collision == true) 
+			p.collisionOn[0][0] = true;
+			
+		if(tm.tile[tm.mapTileNum[nixm][niwt]].collision == true)
+			p.collisionOn[0][1] = true;
+		
+		if(tm.tile[tm.mapTileNum[nicr][niwt]].collision == true)
+			p.collisionOn[0][2] = true;
+		
+		if(tm.tile[tm.mapTileNum[nicl][niym]].collision == true)
+			p.collisionOn[1][0] = true;
+		
+		if(tm.tile[tm.mapTileNum[nicr][niym]].collision == true)
+			p.collisionOn[1][2] = true;
+		
+		if(tm.tile[tm.mapTileNum[nicl][niwb]].collision == true)
+			p.collisionOn[2][0] = true;
+		
+		if(tm.tile[tm.mapTileNum[nixm][niwb]].collision == true)
+			p.collisionOn[2][1] = true;
+		
+		if(tm.tile[tm.mapTileNum[nicr][niwb]].collision == true)
+			p.collisionOn[2][2] = true;
+		
+		
     }
 }
