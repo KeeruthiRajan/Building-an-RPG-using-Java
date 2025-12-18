@@ -23,6 +23,7 @@ RPG loosely inspired by 1986 $${\color{lime}Zelda}$$ and $${\color{purple} Under
 
 ## $${\color{red} Problems}$$ $${\color{red} encountered}$$
 - ~~Sticky Collision Edge~~ $${\color{green} Patched}$$ [on 18-12-2025]
+- Normalization of Diagonal Movement
 - Optimization issues
 
 ## $${\color{yellow} Concepts}$$ $${\color{yellow} to}$$ $${\color{yellow} add}$$
